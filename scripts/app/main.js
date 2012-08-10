@@ -8,6 +8,8 @@ require.config({
 require(['comcom'], function(comcom){
 	
 	// Call comcom and pass in your username
-	comcom.init('sirbrad')
+	comcom.init({
+		username: 'sirbrad'
+	});
 	
 });
