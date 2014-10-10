@@ -1,0 +1,20 @@
+// Set up your global variables
+@import "setup";
+
+// Call in base styles
+@import "Base/mixins";
+@import "Base/functions";
+@import "Base/base";
+@import "Base/helpers";
+
+// Components
+@import "Components/component";
+
+// Modules
+@import "Modules/module";
+
+
+/* Call in the largest query for browsers that do not support media queries. */
+@media (min-width:768px) {
+	//780 files an so on.
+}

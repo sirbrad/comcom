@@ -1,0 +1,28 @@
+// Set up your global variables
+@import "setup";
+
+// Call in base styles
+@import "Base/mixins";
+@import "Base/functions";
+@import "Base/base";
+@import "Base/helpers";
+
+// Components
+@import "Components/component";
+
+// Modules
+@import "Modules/module";
+
+// Media Queries
+@media (min-width:480px) {
+	
+	/* I don't like the idea of nested media queries due to the way sass outputs them.
+	 * So my solution to have a Queries folder or have a duplicate file within
+	 * the same directory but named with the min-width at the end of the file name.
+	 * Example: Components/header - Components/header480
+	*/
+}
+
+@media (min-width:768px) {
+	//780 files an so on.
+}

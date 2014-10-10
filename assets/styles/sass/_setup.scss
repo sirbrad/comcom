@@ -1,0 +1,18 @@
+// Site set-up
+
+// Site Wide Colours
+$brand:#006199;
+$background-color:#ccc;
+$base-text-color:#6D6E71;
+ 
+$base-text-align: left; // switch for rtl
+$base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size: 14px;
+$base-line-height: 1.4;
+
+$site-max-width: 940px;
+
+$space: 1em;
+
+$link-color: $brand;
+$link-color-hover: darken($brand, 15%);

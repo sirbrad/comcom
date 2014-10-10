@@ -1,0 +1,82 @@
+/* Grid
+   ========================================================================== */
+
+.grid {
+	letter-spacing: -0.31em;
+	margin:0 -8px;
+	padding-left: 0; // if element is a list
+	word-spacing: -0.43em;
+}
+
+.grid > [class*="grid--"] {
+	display: inline-block;
+	letter-spacing: normal;
+	margin-bottom: 1em;
+	padding: 0 8px;
+	vertical-align: top;
+    word-spacing: normal;
+    
+	@include box-sizing(border-box);
+}
+
+.grid--thin {
+	margin:0 -4px;
+}
+
+.grid--thin > [class*="grid--"] {
+	margin-bottom: 0.8em;
+	padding:0 4px;
+}
+
+.grid--1-12 {
+	width: calc-percent(1, 12);
+}
+
+.grid--2-12 {
+	width: calc-percent(2, 12);
+}
+
+.grid--3-12 {
+	width: calc-percent(3, 12);
+}
+
+.grid--4-12 {
+	width: calc-percent(4, 12);
+}
+
+.grid--5-12 {
+	width: calc-percent(5, 12);
+}
+
+.grid--6-12 {
+	width: calc-percent(6, 12);
+}
+
+.grid--7-12 {
+	width: calc-percent(7, 12);
+}
+
+.grid--8-12 {
+	width: calc-percent(8, 12);
+}
+
+.grid--9-12 {
+	width: calc-percent(9, 12);
+}
+
+.grid--10-12 {
+	width: calc-percent(10, 12);
+}
+
+.grid--11-12 {
+	width: calc-percent(11, 12);
+}
+
+.grid--12-12 {
+	width: calc-percent(12, 12);
+}
+
+// Unfortunately 5 doesn't go into 12:(
+.grid--1-5 {
+	width: 20%;
+}

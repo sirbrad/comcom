@@ -1,0 +1,17 @@
+{
+  "name": "comcom",
+  "version": "1.0.0",
+  "homepage": "https://github.com/sirbrad/comcom",
+  "authors": [
+    "Bradley Few <few.bradley@gmail.com>"
+  ],
+  "description": "Github Powered Comments",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.1.1"
+  },
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ]"
+}
