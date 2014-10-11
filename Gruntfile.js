@@ -9,6 +9,15 @@ module.exports = function(grunt) {
   grunt.initConfig({
 		pkg: grunt.file.readJSON('package.json'),
 
+    connect: {
+      dev: {
+        options: {
+          port: 8000,
+          keepalive: true
+        }
+      }
+    },
+
 		sass: {
 		  dist: {
 		    options: {
@@ -32,15 +41,6 @@ module.exports = function(grunt) {
 			dest: './assets/styles/',
 			ext: '.css'
 		  }
-		},
-
-		coffee: {
-			compile: {
-		    files: {
-		      './assets/javascript/main.js': './assets/javascript/*.coffee'
-		    }
-		  },
-
 		},
 
 		watch: {
