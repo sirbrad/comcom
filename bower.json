@@ -8,10 +8,11 @@
   "description": "Github Powered Comments",
   "license": "MIT",
   "dependencies": {
-    "jquery": "~2.1.1"
+    "jquery": "~2.1.1",
+    "requirejs": "~2.1.15"
   },
   "ignore": [
     "node_modules",
     "bower_components"
-  ]"
+  ]
 }
