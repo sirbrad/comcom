@@ -1,7 +1,17 @@
-define(['models/comment'], function(model){
+define(['models/comment', 'marked'], function(model, marked){
+
 
   var init = function(){
     var _comments = model.get();
+    marked.setOptions({
+      gfm: true,
+      tables: true,
+      breaks: false,
+      pedantic: false,
+      sanitize: true,
+      smartLists: true,
+      smartypants: true
+    });
 
     bindEvents();
   }
@@ -13,7 +23,7 @@ define(['models/comment'], function(model){
   var render = function(ev, params){
     var data = params.data;
     $(data).each(function(i){
-      $('body').append("<p>" + data[i].body + "</p>")
+      $('body').append(marked(data[i].body))
     })
   };
 
