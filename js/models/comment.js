@@ -4,13 +4,12 @@ define(['jquery'], function($){
 
   var get = function(){
     var xhr = $.ajax(url)
-
       .done(function(data) {
         $(window).trigger('comments-in', { data: data });
       })
   }
 
   return {
-      get: get
+    get: get
   };
 });
