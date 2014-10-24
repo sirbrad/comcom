@@ -6,5 +6,7 @@ require.config({
 })
 
 require(['app'], function(app){
-  app.init()
+  app.init({
+    username: "sirbrad"
+  })
 })

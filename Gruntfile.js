@@ -24,9 +24,9 @@ module.exports = function(grunt) {
 		      style: 'compressed'
 		    },
 		    expand: true,
-		    cwd: './assets/styles/sass/',
-		    src: ['*.scss'],
-		    dest: './assets/styles/',
+		    cwd: './css/sass/',
+		    src: ['**/*.scss'],
+		    dest: './css/',
 		    ext: '.css'
 		  },
 		  dev: {
@@ -36,9 +36,9 @@ module.exports = function(grunt) {
 			  lineNumbers: true
 			},
 			expand: true,
-			cwd: './assets/styles/sass/',
-			src: ['*.scss'],
-			dest: './assets/styles/',
+			cwd: './css/sass/',
+			src: ['**/*.scss'],
+			dest: './css/',
 			ext: '.css'
 		  }
 		},
