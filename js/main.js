@@ -1,7 +1,6 @@
 require.config({
   paths: {
-    "jquery": "libs/jquery/dist/jquery",
-    "marked": "libs/marked/lib/marked"
+    "jquery": "libs/jquery/dist/jquery"
   }
 })
 

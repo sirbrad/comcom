@@ -1,7 +1,7 @@
-define(['views/comments-list'], function(commentList){
+define(['models/comment', 'views/comments-list'], function(commentModel){
 
   var init = function(){
-    commentList.init();
+    commentModel.get();
   };
 
   return {

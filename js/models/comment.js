@@ -1,13 +1,18 @@
 define(['jquery'], function($){
 
-  var url = "https://api.github.com/repos/sirbrad/sirbrad.github.com/issues/3/comments";
+  ajaxOptions = {
+    url: "https://api.github.com/repos/sirbrad/sirbrad.github.com/issues/3/comments",
+    headers: { 'Accept': 'application/vnd.github.v3.html+json' }
+  }
 
   var get = function(){
-    var xhr = $.ajax(url)
-      .done(function(data) {
-        $(window).trigger('comments-in', { data: data });
-      })
-  }
+    $.ajax(ajaxOptions)
+      .done(success)
+  },
+  success = function(data) {
+    console.log(data)
+    $(window).trigger('comments-in', { data: data });
+  };
 
   return {
     get: get
