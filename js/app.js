@@ -1,11 +1,16 @@
 define(['models/comment', 'views/comments-list'], function(commentModel){
 
   var init = function(){
-    commentModel.get();
+    commentModel.get(this.config);
+  };
+
+  var config = {
+    username: "sirbrad"
   };
 
   return {
-    init: init
+    init: init,
+    config: config
   }
 
 });

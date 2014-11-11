@@ -17,6 +17,4 @@ define(['jquery'], function($){
 
   init();
 
-  return {}
-
 });

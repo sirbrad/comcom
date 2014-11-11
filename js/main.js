@@ -4,8 +4,6 @@ require.config({
   }
 })
 
-require(['app'], function(app){
-  app.init({
-    username: "sirbrad"
-  })
+require(['app', 'config'], function(app){
+  app.init();
 })
