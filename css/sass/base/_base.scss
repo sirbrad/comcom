@@ -1,176 +1,112 @@
 // Base
 
-article, aside,
-dialog, figure,
-footer, header,
-hgroup, menu,
-nav, section {
-	display:block;
-}
-
 html {
-	font-family: $base-font-family;
-    font-size: $base-font-size;
-    line-height: $base-line-height;
-    color: $base-text-color;
-    overflow-y: scroll;
-	-webkit-text-size-adjust: 100%;
-	-ms-text-size-adjust: 100%;
+  color: $base-text-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
 }
 
 body {
-	background: $background-color;
-    margin: 0;
+  background: $background-color;
 }
 
 ::selection,
 ::-moz-selection {
-	background-color:$brand;
-	text-shadow: none;
+  background-color: $brand;
+  text-shadow: none;
 }
 
-/* Links
-   ========================================================================== */
+// Links
 
 a {
-    color: $link-color;
-    text-decoration: none;
-}
+  color: $link-color;
+  text-decoration: none;
 
-/* Addresses outline displayed oddly in Chrome */
-
-a:focus {
-    outline: thin dotted;
-}
-
-/* Improves readability when focused and also mouse hovered in all browsers */
-
-a:hover,
-a:active {
-    outline: 0;
-}
-
-a:hover,
-a:focus,
-a:active {
+  :hover,
+  :focus,
+  :active {
     color: $link-color-hover;
     text-decoration: underline;
+  }
 }
 
-/*
- * 1. Allows images to undergo proportional down-scaling within a container
- * 2. Removes border when inside 'a' element in IE8/9, FF3
- * 3. Removes excess space below inline images
- */
-
+// Images
 img {
-    max-width: 100%; // 1
-    height: auto; // 1
-    border: 0; // 2
-    vertical-align: middle; // 3
+  max-width: 100%;
+}
+
+/* Typography
+ ========================================================================== */
+
+.hx {
+  margin: 1em 0;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+h1 {
+  @extend .hx;
+  margin: 0;
+  font-size: $type-sz-1;
+}
+
+h2 {
+  @extend .hx;
+  margin: 1em 0 0.75em;
+  font-size: $type-sz-2;
+}
+
+h3 {
+  @extend .hx;
+  font-size: $type-sz-3;
+}
+
+h4 {
+  @extend .hx;
+  font-size: $type-sz-4;
+}
+h5 {
+  @extend .hx;
+  font-size: $type-sz-5;
+}
+
+h6 {
+  @extend .hx;
+  font-size: $type-sz-6;
+  color: #777;
+}
+
+small {
+  font-size: 75%;
+}
+
+// Block-level margins
+
+p, blockquote, ul, ol, dl, menu, pre {
+  margin: 0 0 $base-line-height + em;
 }
 
 /* Lists
-   ========================================================================== */
+ ========================================================================== */
 
 ul,
 ol {
-    padding-left: 30px;
+  padding-left: 1.5em;
 }
 
 ul ul,
 ol ol,
 ul ol,
 ol ul {
-    margin: 0;
+  padding: 0;
+  margin: 0 0 .75em;
 }
 
 dt {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 dd {
-    margin-left: 30px;
-}
-
-/* Tables
-   ========================================================================== */
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-
-/* Typography
-   ========================================================================== */
-
-.hx {
-    margin: 1em 0;
-    line-height: 1.1;
-    font-weight: bold;
-}
-
-h6, .h6 {
-    @extend .hx;
-    font-size: 0.875em;
-    color: #777;
-}
-
-h5, .h5 {
-    @extend .hx;
-    font-size: 0.875em;
-}
-
-h4, .h4 {
-    @extend .hx;
-    font-size: 1em;
-}
-
-h3, .h3 {
-    @extend .hx;
-    font-size: 1.25em;
-}
-
-h2, .h2 {
-    @extend .hx;
-    margin: 1em 0 0.75em;
-    font-size: 1.5em;
-}
-
-h1, .h1 {
-    @extend .hx;
-    margin: 0 0 0.75em;
-    font-size: 2em;
-}
-
-.h1-l {
-    @extend .hx;
-    margin: 0 0 0.5em;
-    font-size: 3.375em;
-    font-weight: normal;
-}
-
-.h1-xl {
-    @extend .h1-l;
-    margin: 0 0 0.5em;
-    font-size: 4.5em;
-    font-weight: normal;
-}
-
-small,
-.txt-s {
-    font-size: 75%;
-}
-
-.txt-xl {
-    font-size: 1.5em;
-}
-
-/*
- * Block-level margins
- */
-
-p, blockquote, ul, ol, dl, menu, pre {
-	margin: 0 0 $base-line-height + em;
+  margin-left: 30px;
 }
