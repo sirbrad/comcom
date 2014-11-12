@@ -775,10 +775,13 @@ dd {
   color: #fff;
   text-align: center;
   padding: 4em 0 2em;
+  position: fixed;
+  top: 0;
   min-height: 30em;
+  width: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_header\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_header\.scss}line{font-family:\0000323}}
 .site-brand {
   background: rgba(0, 0, 0, 0.05);
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -789,7 +792,7 @@ dd {
   padding: .5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_header\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_header\.scss}line{font-family:\0000334}}
 .site-head h2 {
   font-size: 5em;
   font-weight: 100;
@@ -799,18 +802,34 @@ dd {
 .comment-list {
   background: #f0f0f0;
   list-style: none;
-  margin: 0;
+  margin: 30em 0 0;
   padding: 2em;
+  position: relative;
+  z-index: 1;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000312}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000314}}
+.comment_list__item {
+  margin-bottom: 2em;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000317}}
+.comment_list__item:last-child {
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000322}}
+.comment_list__item.is-owner {
+  border: 1px solid red;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000326}}
 .comment-list__img {
   float: left;
   margin-right: 2em;
   position: relative;
   width: 15%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000332}}
 .comment-list__img:before {
   content: "";
   background: #fff;
@@ -823,24 +842,24 @@ dd {
   width: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000345}}
 .comment-list__body {
   background: #fff;
   overflow: hidden;
   padding: 2em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000351}}
 .comment-list__head {
   margin-bottom: 1em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000341}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000355}}
 .comment-list__date {
   font-style: italic;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000359}}
 .comment-list__body p:last-child {
   margin-bottom: 0;
 }

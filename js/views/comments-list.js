@@ -19,7 +19,7 @@ define(['jquery', 'tpl!../templates/comment-item.tpl'], function($, commentHtml)
         profile_url: data[i].user.html_url
       });
       // $('.site-body').append(data[i].body_html)
-      $('.site-body').append(_html)
+      $('.comment-list').append(_html)
     })
   };
 

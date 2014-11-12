@@ -5,8 +5,22 @@
 .comment-list {
   background: #f0f0f0;
   list-style: none;
-  margin: 0;
+  margin: 30em 0 0;
   padding: 2em;
+  position: relative;
+  z-index: 1;
+}
+
+.comment_list__item {
+  margin-bottom: 2em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.comment_list__item.is-owner {
+  border: 1px solid red;
 }
 
 .comment-list__img {

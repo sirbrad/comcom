@@ -1,4 +1,4 @@
-<li>
+<li class="comment_list__item <%= config.username === author ? 'is-owner' : '' %>">
   <a href="<%= profile_url %>" class="comment-list__img">
     <img src="<%= avatar_url %>" alt="<%= author %>'s avatar" />
   </a>
