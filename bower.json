@@ -8,12 +8,14 @@
   "description": "Github Powered Comments",
   "license": "MIT",
   "dependencies": {
-    "jquery": "~2.1.1",
-    "requirejs": "~2.1.15",
-    "marked": "~0.3.2"
   },
   "ignore": [
     "node_modules",
     "bower_components"
-  ]
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.1",
+    "requirejs": "~2.1.15",
+    "requirejs-tpl": "*",
+  }
 }

@@ -1,9 +1,10 @@
 // Set up your global variables
 @import "setup";
 
-// Call in base styles
+@import "libs/normalize";
+@import "libs/pygments";
+
 @import "base/mixins";
-@import "base/normalize";
 @import "base/base";
 @import "base/helpers";
 
