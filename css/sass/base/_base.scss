@@ -23,9 +23,9 @@ a {
   color: $link-color;
   text-decoration: none;
 
-  :hover,
-  :focus,
-  :active {
+  &:hover,
+  &:focus,
+  &:active {
     color: $link-color-hover;
     text-decoration: underline;
   }
@@ -34,6 +34,7 @@ a {
 // Images
 img {
   max-width: 100%;
+  vertical-align: top;
 }
 
 /* Typography
@@ -84,7 +85,7 @@ small {
 // Block-level margins
 
 p, blockquote, ul, ol, dl, menu, pre {
-  margin: 0 0 $base-line-height + em;
+  margin: 0 0 1em;
 }
 
 /* Lists

@@ -415,101 +415,100 @@ th {
 html {
   color: #6D6E71;
   font-family: Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.4;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000310}}
 body {
-  background: #28d2b4;
+  background: #fff;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000314}}
 ::selection,
 ::-moz-selection {
-  background-color: #28d2b4;
+  background-color: #88adc9;
   text-shadow: none;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000322}}
 a {
-  color: #28d2b4;
+  color: #88adc9;
   text-decoration: none;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000326}}
-a :hover,
-a :focus,
-a :active {
-  color: #1c927d;
+a:hover, a:focus, a:active {
+  color: #5389b1;
   text-decoration: underline;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000335}}
 img {
   max-width: 100%;
+  vertical-align: top;
 }
 
 /* Typography
  ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000343}}
 .hx, h1, h2, h3, h4, h5, h6 {
   margin: 1em 0;
   line-height: 1.2;
   font-weight: 500;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000348}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000349}}
 h1 {
   margin: 0;
   font-size: 2.625rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000355}}
 h2 {
   margin: 1em 0 0.75em;
   font-size: 1.75rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000360}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000361}}
 h3 {
   font-size: 1.3125rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000366}}
 h4 {
   font-size: 1.125rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000369}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000370}}
 h5 {
   font-size: 1rem;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000374}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000375}}
 h6 {
   font-size: 0.875rem;
   color: #777;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000380}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000381}}
 small {
   font-size: 75%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000386}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000387}}
 p, blockquote, ul, ol, dl, menu, pre {
-  margin: 0 0 1.4em;
+  margin: 0 0 1em;
 }
 
 /* Lists
  ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000393}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000394}}
 ul,
 ol {
   padding-left: 1.5em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000398}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\0000399}}
 ul ul,
 ol ol,
 ul ol,
@@ -518,12 +517,12 @@ ol ul {
   margin: 0 0 .75em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\00003106}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\00003107}}
 dt {
   font-weight: bold;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\00003110}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\00003111}}
 dd {
   margin-left: 30px;
 }
@@ -609,7 +608,7 @@ dd {
    ========================================================================== */
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_helpers\.scss}line{font-family:\0000376}}
 .contain {
-  max-width: 940px;
+  max-width: 640px;
   padding: 0 10px;
   margin: 0 auto;
 }
@@ -646,11 +645,62 @@ dd {
   margin: 0;
 }
 
-/* Modules
-   ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/modules\/_layout\.scss}line{font-family:\000036}}
-.site-body {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_header\.scss}line{font-family:\000035}}
+.site-head {
+  background: #88adc9;
+  color: #fff;
+  text-align: center;
+  padding: 2em 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\000035}}
+.comment-list {
+  background: #f0f0f0;
+  list-style: none;
+  margin: 0;
+  padding: 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000312}}
+.comment-list__img {
+  float: left;
+  margin-right: 2em;
+  position: relative;
+  width: 15%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000318}}
+.comment-list__img:before {
+  content: "";
   background: #fff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -1px;
+  width: 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000331}}
+.comment-list__body {
+  background: #fff;
+  overflow: hidden;
+  padding: 2em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000337}}
+.comment-list__head {
+  margin-bottom: 1em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000341}}
+.comment-list__date {
+  font-style: italic;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\0000345}}
+.comment-list__body p:last-child {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -30,16 +30,16 @@ module.exports = function(grunt) {
 		    ext: '.css'
 		  },
 		  dev: {
-			options: {
-			  style: 'expanded',
-			  debugInfo: true,
-			  lineNumbers: true
-			},
-			expand: true,
-			cwd: './css/sass/',
-			src: ['**/*.scss'],
-			dest: './css/',
-			ext: '.css'
+  			options: {
+  			  style: 'expanded',
+  			  debugInfo: true,
+  			  lineNumbers: true
+  			},
+  			expand: true,
+  			cwd: './css/sass/',
+  			src: ['**/*.scss'],
+  			dest: './css/',
+  			ext: '.css'
 		  }
 		},
 
