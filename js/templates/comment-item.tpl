@@ -8,7 +8,7 @@
         <strong><%= author %></strong>
       </a>
       <time class="comment-list__date" datetime="2012-08-17" pubdate="">
-        <small><% date %></small>
+        <small><%= date %></small>
       </time>
     </header>
     <%= content %>

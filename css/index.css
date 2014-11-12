@@ -532,7 +532,7 @@ th {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/base\/_base\.scss}line{font-family:\000033}}
 html {
   color: #6D6E71;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -765,10 +765,34 @@ dd {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_header\.scss}line{font-family:\000035}}
 .site-head {
-  background: #88adc9;
+  background: #367ca9;
+  background: -moz-linear-gradient(top, #367ca9 0%, #7285b4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #367ca9), color-stop(100%, #7285b4));
+  background: -webkit-linear-gradient(top, #367ca9 0%, #7285b4 100%);
+  background: -o-linear-gradient(top, #367ca9 0%, #7285b4 100%);
+  background: -ms-linear-gradient(top, #367ca9 0%, #7285b4 100%);
+  background: linear-gradient(to bottom, #367ca9 0%, #7285b4 100%);
   color: #fff;
   text-align: center;
-  padding: 2em 0;
+  padding: 4em 0 2em;
+  min-height: 30em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_header\.scss}line{font-family:\0000320}}
+.site-brand {
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: .25rem;
+  display: inline-block;
+  font-size: 1.75em;
+  line-height: 1;
+  padding: .5em;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_header\.scss}line{font-family:\0000331}}
+.site-head h2 {
+  font-size: 5em;
+  font-weight: 100;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/bradleyfew\/Projects\/comcom\/css\/sass\/layouts\/_comment-list\.scss}line{font-family:\000035}}
