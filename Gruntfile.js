@@ -31,9 +31,7 @@ module.exports = function(grunt) {
 		  },
 		  dev: {
   			options: {
-  			  style: 'expanded',
-  			  // debugInfo: true,
-  			  lineNumbers: true
+  			  style: 'expanded'
   			},
   			expand: true,
   			cwd: './css/sass/',
