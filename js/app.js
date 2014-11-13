@@ -4,10 +4,6 @@ define(['models/comment', 'views/comments-list'], function(commentModel){
     commentModel.get(this.config);
   };
 
-  var config = {
-    username: "sirbrad"
-  };
-
   return {
     init: init,
     config: config

@@ -1,5 +1,6 @@
 .bowerrc
 .sass-cache
+index.css.map
 node_modules
 npm-debug.log
 js/libs

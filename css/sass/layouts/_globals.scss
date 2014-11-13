@@ -1,0 +1,9 @@
+// Global
+
+@import "../setup";
+
+.contain {
+  max-width: $site-max-width;
+  padding: 0 1em;
+  margin: 0 auto;
+}

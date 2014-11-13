@@ -6,13 +6,11 @@ define(['jquery'], function($){
   };
 
   var get = function(){
-    console.log(window.config);
     $.ajax(ajaxOptions)
       .done(success)
   };
 
   var success = function(data) {
-    console.log(data)
     $(window).trigger('comments-in', { data: data });
   };
 
