@@ -32,7 +32,7 @@ module.exports = function(grunt) {
 		  dev: {
   			options: {
   			  style: 'expanded',
-  			  debugInfo: true,
+  			  // debugInfo: true,
   			  lineNumbers: true
   			},
   			expand: true,
