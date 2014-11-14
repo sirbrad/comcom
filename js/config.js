@@ -1,7 +1,5 @@
-define(function(commentModel){
-
-  window.config = {};
-
-  config.username = "sirbrad";
-
+define({
+  username: 'sirbrad',
+  repo:     'sirbrad.github.io',
+  issue_id: parseInt(document.body.getAttribute('data-issue-id'))
 });

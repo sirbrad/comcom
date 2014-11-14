@@ -1,20 +1,28 @@
-define(['jquery'], function($){
+define(['jquery', 'config'], function($, config){
 
   var ajaxOptions = {
-    url: "https://api.github.com/repos/sirbrad/sirbrad.github.com/issues/3/comments",
+    url: url(),
     headers: { 'Accept': 'application/vnd.github.v3.html+json' }
   };
 
-  var get = function(){
+  function url(){
+    var _url = "https://api.github.com/repos/";
+    _url += config.username + "/";
+    _url += config.repo;
+    _url += "/issues/" + config.issue_id + "comments";
+    return _url
+  };
+
+  function fetch(){
     $.ajax(ajaxOptions)
       .done(success)
   };
 
-  var success = function(data) {
-    $(window).trigger('comments-in', { data: data });
+  function success(data) {
+    $(window).trigger('comments-fetched', { data: data });
   };
 
   return {
-    get: get
+    fetch: fetch
   };
 });

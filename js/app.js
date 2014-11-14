@@ -1,12 +1,11 @@
 define(['models/comment', 'views/comments-list'], function(commentModel){
 
-  var init = function(){
-    commentModel.get(this.config);
+  function init(){
+    commentModel.fetch();
   };
 
   return {
-    init: init,
-    config: config
+    init: init
   }
 
 });
