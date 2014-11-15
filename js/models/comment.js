@@ -9,7 +9,7 @@ define(['jquery', 'config'], function($, config){
     var _url = "https://api.github.com/repos/";
     _url += config.username + "/";
     _url += config.repo;
-    _url += "/issues/" + config.issue_id + "/comments";
+    _url += "/issues/" + config.issue_id + "/comments?per_page=100";
     return _url
   };
 
@@ -18,7 +18,7 @@ define(['jquery', 'config'], function($, config){
       .done(success)
   };
 
-  function success(data) {
+  function success(data, status, xhr) {
     $(window).trigger('comments-fetched', { data: data });
   };
 

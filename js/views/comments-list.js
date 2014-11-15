@@ -11,7 +11,7 @@ define(
   };
 
   function dateFormats(date) {
-     return {
+    return {
       from_now: moment(date).fromNow(),
       formatted: moment(date).format('MMMM Do, YYYY'),
       numeric: moment(date).format('YYYY-DD-MM')
@@ -32,13 +32,6 @@ define(
 
       $('.comment-list').append(_html)
     })
-    // fetch more data. If data isn't there then
-    // the comments-fetched window event won't fire
-    // so we good.
-    model.fetch();
-
-    // $(window).trigger('view-updated');
-    // Then in the model, listen to this to then fetch again
   };
 
   init();
