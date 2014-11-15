@@ -541,7 +541,7 @@ h5 {
 }
 
 h6 {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #777;
 }
 
@@ -635,8 +635,9 @@ dd {
 }
 
 .comment-list__img {
+  background: #fff;
   float: left;
-  margin-right: 2em;
+  margin: 1.3em 2em 0 0;
   position: relative;
   width: 15%;
 }
@@ -663,11 +664,46 @@ dd {
 }
 
 .comment-list__date {
+  display: inline-block;
+  font-size: 0.75rem;
   font-style: italic;
+  position: relative;
+}
+.comment-list__date:before {
+  content: attr(data-date);
+  background: #fff;
+  min-width: 200px;
+  opacity: 0;
+  position: absolute;
+  -webkit-transform: translateX(0.5em);
+  -moz-transform: translateX(0.5em);
+  -ms-transform: translateX(0.5em);
+  -o-transform: translateX(0.5em);
+  transform: translateX(0.5em);
+  -webkit-transition: all 0.35s ease 0.2s;
+  -moz-transition: all 0.35s ease 0.2s;
+  -ms-transition: all 0.35s ease 0.2s;
+  -o-transition: all 0.35s ease 0.2s;
+  transition: all 0.35s ease 0.2s;
+}
+.comment-list__date:hover:before {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+  transform: translateX(0);
 }
 
 .comment-list__body p:last-child {
   margin-bottom: 0;
+}
+
+.comment-list__body pre {
+  background: #f0f0f0;
+  padding: 1em;
+  overflow: auto;
+  word-wrap: normal;
 }
 
 /*# sourceMappingURL=index.css.map */

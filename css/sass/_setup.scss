@@ -3,6 +3,7 @@
 // Site Wide Colours
 $brand: #88adc9;
 $brand-white: #fff;
+$brand-grey: #f0f0f0;
 $background-color: $brand-white;
 $base-text-color: #6D6E71;
 
@@ -18,7 +19,7 @@ $type-sz-2: 1.75rem;
 $type-sz-3: 1.3125rem;
 $type-sz-4: 1.125rem;
 $type-sz-5: 1rem;
-$type-sz-6: .875rem;
+$type-sz-6: .75rem;
 
 $link-color: $brand;
 $link-color-hover: darken($brand, 15%);

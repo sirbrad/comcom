@@ -1,8 +1,8 @@
 require.config({
   paths: {
-    "jquery"    : "libs/jquery/dist/jquery",
-    "tpl"       : "libs/requirejs-tpl/tpl",
-    "config" : "config"
+    "jquery" : "libs/jquery/dist/jquery",
+    "tpl"    : "libs/requirejs-tpl/tpl",
+    'moment' : "libs/moment/moment"
   }
 })
 

@@ -9,7 +9,7 @@ define(['jquery', 'config'], function($, config){
     var _url = "https://api.github.com/repos/";
     _url += config.username + "/";
     _url += config.repo;
-    _url += "/issues/" + config.issue_id + "comments";
+    _url += "/issues/" + config.issue_id + "/comments";
     return _url
   };
 

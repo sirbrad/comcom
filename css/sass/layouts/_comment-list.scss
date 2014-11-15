@@ -3,7 +3,7 @@
 @import "../setup";
 
 .comment-list {
-  background: #f0f0f0;
+  background: $brand-grey;
   list-style: none;
   margin: 30em 0 0;
   padding: 2em;
@@ -24,8 +24,9 @@
 }
 
 .comment-list__img {
+  background: $brand-white;
   float: left;
-  margin-right: 2em;
+  margin: 1.3em 2em 0 0;
   position: relative;
   width: 15%;
 
@@ -53,9 +54,34 @@
 }
 
 .comment-list__date {
+  display: inline-block;
+  font-size: $type-sz-6;
   font-style: italic;
+  position: relative;
+
+  &:before {
+    content: attr(data-date);
+    background: $brand-white;
+    min-width: 200px;
+    opacity: 0;
+    position: absolute;
+    @include transform(translateX(.5em));
+    @include transition(all 0.35s ease .2s);
+  }
+
+  &:hover:before {
+    opacity: 1;
+    @include transform(translateX(0));
+  }
 }
 
 .comment-list__body p:last-child {
   margin-bottom: 0;
+}
+
+.comment-list__body pre {
+  background: $brand-grey;
+  padding: 1em;
+  overflow: auto;
+  word-wrap: normal;
 }
