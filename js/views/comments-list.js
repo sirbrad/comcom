@@ -1,5 +1,6 @@
-define(['jquery', 'moment', 'tpl!../templates/comment-item.tpl'],
-  function($, moment, tpl){
+define(
+  ['jquery', 'moment', '../models/comment', 'tpl!../templates/comment-item.tpl'],
+  function($, moment, model, tpl){
 
   function init(){
     bindEvents();
@@ -31,6 +32,13 @@ define(['jquery', 'moment', 'tpl!../templates/comment-item.tpl'],
 
       $('.comment-list').append(_html)
     })
+    // fetch more data. If data isn't there then
+    // the comments-fetched window event won't fire
+    // so we good.
+    model.fetch();
+
+    // $(window).trigger('view-updated');
+    // Then in the model, listen to this to then fetch again
   };
 
   init();
