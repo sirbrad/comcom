@@ -91,6 +91,7 @@ module.exports = function(grunt) {
         src: ['js/**/*.js', !'!js/libs/**/*'],
         options: {
           specs: 'spec/**/*-spec.js',
+          vendors: 'js/libs/**/*',
           // helpers : 'specs/helpers/*.js',
           host: 'http://127.0.0.1:8899/',
           template: require('grunt-template-jasmine-requirejs'),
