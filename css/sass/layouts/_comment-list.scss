@@ -19,7 +19,7 @@
   }
 }
 
-.comment_list__item.is-owner {
+.comment-list__item.is-owner {
   border: 1px solid red;
 }
 
@@ -72,6 +72,16 @@
   &:hover:before {
     opacity: 1;
     @include transform(translateX(0));
+  }
+}
+
+.comment-list__author {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+
+  &:hover {
+    border-color: $brand;
+    text-decoration: none;
   }
 }
 

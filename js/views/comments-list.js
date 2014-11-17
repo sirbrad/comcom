@@ -8,15 +8,15 @@ define(
 
   function bindEvents(){
     $(window).on('comments-fetched', updateView);
-  };
+  }
 
   function dateFormats(date) {
     return {
       from_now: moment(date).fromNow(),
       formatted: moment(date).format('MMMM Do, YYYY'),
       numeric: moment(date).format('YYYY-DD-MM')
-    }
-  };
+    };
+  }
 
   function updateView(ev, params){
     var data = params.data;
@@ -30,9 +30,9 @@ define(
         profile_url: data[i].user.html_url
       });
 
-      $('.comment-list').append(_html)
-    })
-  };
+      $('.comment-list').append(_html);
+    });
+  }
 
   init();
 

@@ -4,8 +4,8 @@ require.config({
     "tpl"    : "libs/requirejs-tpl/tpl",
     'moment' : "libs/moment/moment"
   }
-})
+});
 
 require(['app'], function(app){
   app.init();
-})
+});

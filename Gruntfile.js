@@ -4,7 +4,8 @@ module.exports = function(grunt) {
   require('time-grunt')(grunt);
 
   // Load NPM Tasks
-  require('load-grunt-tasks')(grunt, ['grunt-*'])
+  require('load-grunt-tasks')(grunt, ['grunt-*']);
+
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -14,6 +15,11 @@ module.exports = function(grunt) {
         options: {
           port: 8000,
           keepalive: true
+        }
+      },
+      test: {
+        options: {
+          port: 8899
         }
       }
     },
@@ -41,12 +47,69 @@ module.exports = function(grunt) {
       }
     },
 
+    jshint: {
+      files: ['Gruntfile.js', 'js/**/*.js', '!js/libs/**/*'],
+      options: {
+        curly:   true,
+        eqeqeq:  true,
+        immed:   true,
+        latedef: true,
+        newcap:  true,
+        noarg:   true,
+        sub:     true,
+        undef:   true,
+        boss:    true,
+        eqnull:  true,
+        browser: true,
+
+        globals: {
+          // AMD
+          module:     true,
+          require:    true,
+          requirejs:  true,
+          define:     true,
+
+          // Environments
+          console:    true,
+
+          // General Purpose Libraries
+          $:          true,
+          jQuery:     true,
+
+          // Testing
+          describe:   true,
+          it:         true,
+          expect:     true,
+          beforeEach: true,
+          afterEach:  true
+        }
+      }
+    },
+
+    jasmine: {
+      run: {
+        src: ['js/**/*.js', !'!js/libs/**/*'],
+        options: {
+          specs: 'spec/**/*-spec.js',
+          // helpers : 'specs/helpers/*.js',
+          host: 'http://127.0.0.1:8899/',
+          template: require('grunt-template-jasmine-requirejs'),
+          templateOptions: {
+            baseUrl: 'js/',
+            requireConfigFile: 'js/main.js'
+          }
+        }
+      }
+    },
+
     watch: {
-      files: ['<%= sass.dev.src %>'],
+      files: ['<%= jasmine.options.specs %>', '<%= sass.dev.src %>'],
       tasks: 'default'
     }
   });
 
   // Default Task
-  grunt.registerTask('default', ['sass:dev']);
+  grunt.registerTask('default', ['sass:dev', 'connect:dev']);
+
+  grunt.registerTask('test', ['connect:test', 'jasmine:run']);
 };

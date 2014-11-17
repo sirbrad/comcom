@@ -630,7 +630,7 @@ dd {
   margin-bottom: 0;
 }
 
-.comment_list__item.is-owner {
+.comment-list__item.is-owner {
   border: 1px solid red;
 }
 
@@ -693,6 +693,15 @@ dd {
   -ms-transform: translateX(0);
   -o-transform: translateX(0);
   transform: translateX(0);
+}
+
+.comment-list__author {
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+}
+.comment-list__author:hover {
+  border-color: #88adc9;
+  text-decoration: none;
 }
 
 .comment-list__body p:last-child {
