@@ -8,4 +8,4 @@ define(function(require) {
       expect(a).toBe(true);
     });
   });
-}
+});

@@ -86,23 +86,6 @@ module.exports = function(grunt) {
       }
     },
 
-    jasmine: {
-      run: {
-        src: ['js/**/*.js', !'!js/libs/**/*'],
-        options: {
-          specs: 'spec/**/*-spec.js',
-          vendors: 'js/libs/**/*',
-          // helpers : 'specs/helpers/*.js',
-          host: 'http://127.0.0.1:8899/',
-          template: require('grunt-template-jasmine-requirejs'),
-          templateOptions: {
-            baseUrl: 'js/',
-            requireConfigFile: 'js/main.js'
-          }
-        }
-      }
-    },
-
     watch: {
       files: ['<%= jasmine.options.specs %>', '<%= sass.dev.src %>'],
       tasks: 'default'
@@ -112,5 +95,4 @@ module.exports = function(grunt) {
   // Default Task
   grunt.registerTask('default', ['sass:dev', 'connect:dev']);
 
-  grunt.registerTask('test', ['connect:test', 'jasmine:run']);
 };
